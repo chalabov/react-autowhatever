@@ -25,10 +25,10 @@
     "prepublish": "npm run dist"
   },
   "dependencies": {
+    "react-themeable": "1",
     "@packetloop/section-iterator": "2"
   },
   "peerDependencies": {
-    "react-themeable": "1",
     "react": "^0.14 || ^15"
   },
   "devDependencies": {
