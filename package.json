@@ -19,7 +19,6 @@
     "build": "npm run dist",
     "gh-pages-build": "npm run prebuild && npm run demo-dist",
     "deploy": "./scripts/deploy-to-gh-pages.sh",
-    "postversion": "git push && git push --tags",
     "prepublish": "npm run dist"
   },
   "dependencies": {
@@ -58,7 +57,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/Autowhatever.js"
   ],
   "keywords": [
     "autosuggest",
