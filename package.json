@@ -1,6 +1,9 @@
 {
-  "name": "react-autowhatever",
+  "name": "@packetloop/react-autowhatever",
   "version": "3.3.0",
+  "publishConfig": {
+    "registry": "https://api.bintray.com/npm/arbornetworks/packetloop"
+  },
   "description": "Accessible rendering layer for Autosuggest and Autocomplete components",
   "main": "dist/Autowhatever.js",
   "repository": {
@@ -19,46 +22,46 @@
     "build": "npm run dist",
     "gh-pages-build": "npm run prebuild && npm run demo-dist",
     "deploy": "./scripts/deploy-to-gh-pages.sh",
-    "postversion": "git push && git push --tags",
     "prepublish": "npm run dist"
   },
   "dependencies": {
-    "react-themeable": "^1.0.1",
-    "section-iterator": "git://github.com/packetloop/section-iterator#dist"
+    "react-themeable": "1",
+    "@packetloop/section-iterator": "2"
   },
   "peerDependencies": {
-    "react": "^0.14.7 || ^15.0.1"
+    "react": "^0.14 || ^15"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "babel-cli": "^6.8.0",
-    "babel-core": "^6.8.0",
-    "babel-eslint": "^6.0.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "babel-register": "^6.8.0",
-    "chai": "^3.5.0",
-    "css-loader": "^0.23.1",
-    "eslint": "2.8.0",
-    "eslint-plugin-react": "^5.1.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
-    "mocha": "^2.4.5",
-    "postcss-loader": "^0.9.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1",
-    "react-hot-loader": "^1.3.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.5.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1"
+    "autoprefixer": "6.3.7",
+    "babel-cli": "6.10.1",
+    "babel-core": "6.10.4",
+    "babel-eslint": "6.1.0",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-0": "6.5.0",
+    "babel-register": "6.9.0",
+    "chai": "3.5.0",
+    "css-loader": "0.23.1",
+    "eslint": "3.0.0",
+    "eslint-plugin-react": "5.2.2",
+    "extract-text-webpack-plugin": "1.0.1",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
+    "mocha": "2.5.3",
+    "postcss-loader": "0.9.1",
+    "react": "15.2.0",
+    "react-dom": "15.2.0",
+    "react-hot-loader": "1.3.0",
+    "react-redux": "4.4.5",
+    "redux": "3.5.2",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/Autowhatever.js"
   ],
   "keywords": [
     "autosuggest",
