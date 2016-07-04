@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import createSectionIterator from 'section-iterator';
+import createSectionIterator from '@packetloop/section-iterator';
 import themeable from 'react-themeable';
 
 function noop() {}
